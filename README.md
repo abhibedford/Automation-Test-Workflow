@@ -1,4 +1,4 @@
-# Automation_Test_Workflow
+# Automation Test Workflow
 Setting up an automation testing workflow using Gradle, JBehave and Serenity BDD with Selenium.
 
 I've recently begun attempting some automation at work and after some random research (I am an absolute rookie to automation), I've come up with a setup that is very easy to replicate and might be useful for others like me.
