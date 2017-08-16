@@ -1,0 +1,46 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath ('net.serenity-bdd:serenity-gradle-plugin:1.4.0')    
+    }
+}
+
+dependencies {
+
+    testCompile 'junit:junit:4.12'
+    
+    
+	testCompile 'net.serenity-bdd:serenity-core:1.1.42'    
+    testCompile 'net.serenity-bdd:serenity-junit:1.4.0'    
+    testCompile 'net.serenity-bdd:serenity-jbehave:1.24.0'  
+
+	testCompile 'org.apache.poi:poi:3.16'
+	testCompile 'org.apache.poi:poi-ooxml:3.16'
+	
+	testCompile 'commons-codec:commons-codec:1.10'
+	testCompile 'org.apache.commons:commons-collections4:4.1'
+	
+    testCompile 'org.slf4j:slf4j-simple:1.7.7'
+
+}
+
+apply plugin: 'net.serenity-bdd.aggregator'	
+gradle.startParameter.continueOnFailure = true 
+
+test {
+    testLogging {
+        events "passed", "skipped", "failed"
+        //, "standardOut", "standardError"
+    }
+}

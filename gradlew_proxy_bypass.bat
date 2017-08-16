@@ -1,0 +1,1 @@
+gradlew -Djdk.http.auth.tunneling.disabledSchemes=”” -Djdk.http.auth.proxying.disabledSchemes=””
