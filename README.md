@@ -23,3 +23,5 @@ Now I had to put these things together.
 I did a bit more research and found that most of my colleagues used a build tool called Maven, which they configured using an .xml file called a POM.xml file. I did not like the way it looked, so I did a bit of googling and found Gradle!
 Gradle is awesome. It can be controlled using Groovy and had a configuration file that was sensibly called a build file.
 Just like other build tools, gradle lets us specify what we want and from where we want it, and it just does the rest. What I really really liked about it though was the Gradle Wrapper. So in essence, I set up gradle on my system and create a project and create a gradle wrapper. Now I can run the exact same project in another system using the gradle wrapper. The wrapper will download gradle and set up everything you require including the system and Environment variables. Pretty neat, eh? :)
+
+NOTE: This setup uses the Internet Explorer Driver. I have written a custom driver for selenium to use, which includes setting desired capabilities to ignore protected mode and zoom settings.
